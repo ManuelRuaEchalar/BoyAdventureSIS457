@@ -1,0 +1,2 @@
+D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\DebugGame\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
+D:\src_SIS457\BoyAdventureUSFX\Source\BoyAdventureUSFX\BoyAdventureUSFX.h

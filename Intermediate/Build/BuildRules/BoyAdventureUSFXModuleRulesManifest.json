@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\src_SIS457\\BoyAdventureUSFX\\Source\\BoyAdventureUSFX\\BoyAdventureUSFX.Build.cs",
+		"D:\\src_SIS457\\BoyAdventureUSFX\\Source\\BoyAdventureUSFX.Target.cs",
+		"D:\\src_SIS457\\BoyAdventureUSFX\\Source\\BoyAdventureUSFXEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
