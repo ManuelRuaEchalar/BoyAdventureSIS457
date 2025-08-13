@@ -17,5 +17,6 @@ class BOYADVENTUREUSFX_API AParedMetal : public AObstaculoPared
 private:
 	FString TipoMetal;
 
-
+public:
+	AParedMetal();
 };

@@ -13,3 +13,9 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\BoyAdventureUSFXCharacter.generated.h
+D:\src_SIS457\BoyAdventureUSFX\Source\BoyAdventureUSFX\ObstaculoPared.h
+D:\src_SIS457\BoyAdventureUSFX\Source\BoyAdventureUSFX\Obstaculo.h
+D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\Obstaculo.generated.h
+D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\ObstaculoPared.generated.h
+D:\src_SIS457\BoyAdventureUSFX\Source\BoyAdventureUSFX\ParedMetal.h
+D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\ParedMetal.generated.h

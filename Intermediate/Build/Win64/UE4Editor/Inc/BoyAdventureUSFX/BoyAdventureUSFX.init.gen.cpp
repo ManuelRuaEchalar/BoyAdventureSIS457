@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeBoyAdventureUSFX_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x9F243A13,
+				0x9083BC5B,
 				0xBAB16A66,
 				METADATA_PARAMS(nullptr, 0)
 			};

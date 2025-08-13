@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeBoyAdventureUSFXGameMode() {}
 	BOYADVENTUREUSFX_API UClass* Z_Construct_UClass_ABoyAdventureUSFXGameMode();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_BoyAdventureUSFX();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 // End Cross Module References
 	void ABoyAdventureUSFXGameMode::StaticRegisterNativesABoyAdventureUSFXGameMode()
 	{
@@ -31,6 +32,15 @@ void EmptyLinkFunctionForGeneratedCodeBoyAdventureUSFXGameMode() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Intervalo_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Intervalo;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RangoMovimiento_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_RangoMovimiento;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +56,24 @@ void EmptyLinkFunctionForGeneratedCodeBoyAdventureUSFXGameMode() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_Intervalo_MetaData[] = {
+		{ "Category", "Movimiento" },
+		{ "ModuleRelativePath", "BoyAdventureUSFXGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_Intervalo = { "Intervalo", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoyAdventureUSFXGameMode, Intervalo), METADATA_PARAMS(Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_Intervalo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_Intervalo_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_RangoMovimiento_MetaData[] = {
+		{ "Category", "Movimiento" },
+		{ "ModuleRelativePath", "BoyAdventureUSFXGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_RangoMovimiento = { "RangoMovimiento", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABoyAdventureUSFXGameMode, RangoMovimiento), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_RangoMovimiento_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_RangoMovimiento_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_Intervalo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::NewProp_RangoMovimiento,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABoyAdventureUSFXGameMode>::IsAbstract,
 	};
@@ -55,11 +83,11 @@ void EmptyLinkFunctionForGeneratedCodeBoyAdventureUSFXGameMode() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::PropPointers),
 		0,
 		0x008802ACu,
 		METADATA_PARAMS(Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ABoyAdventureUSFXGameMode_Statics::Class_MetaDataParams))
@@ -73,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeBoyAdventureUSFXGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABoyAdventureUSFXGameMode, 3822821567);
+	IMPLEMENT_CLASS(ABoyAdventureUSFXGameMode, 4080416793);
 	template<> BOYADVENTUREUSFX_API UClass* StaticClass<ABoyAdventureUSFXGameMode>()
 	{
 		return ABoyAdventureUSFXGameMode::StaticClass();

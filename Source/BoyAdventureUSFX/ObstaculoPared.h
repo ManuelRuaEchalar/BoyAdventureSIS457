@@ -28,6 +28,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	AObstaculoPared();
+
 public:
 	FString Estilo;
 	FString Material;

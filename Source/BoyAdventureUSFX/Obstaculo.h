@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Obstaculo.generated.h"
 
+class UStaticMeshComponent;
 
 UCLASS()
 class BOYADVENTUREUSFX_API AObstaculo : public AActor
@@ -52,6 +53,9 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	//class UStaticMeshComponent* MallaObstaculo;
+	UStaticMeshComponent* MallaObstaculo;
 
 public:	
 	// Called every frame
