@@ -14,7 +14,7 @@ AObstaculoPared::AObstaculoPared() : AObstaculo()
     
     if (MaterialAsset.Succeeded())
     {
-        MallaObstaculo->SetMaterial(0, MaterialAsset.Object); // El índice 0 es el primer slot de material
+        MallaObstaculo->SetMaterial(0, MaterialAsset.Object); // El ï¿½ndice 0 es el primer slot de material
     }
 }
 

@@ -1,0 +1,3 @@
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Development\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Source\BoyAdventureUSFX\Plataforma.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\Plataforma.generated.h

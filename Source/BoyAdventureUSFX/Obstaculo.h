@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Obstaculo.h
 #pragma once
 
 #include "CoreMinimal.h"
@@ -11,54 +10,48 @@ class UStaticMeshComponent;
 UCLASS()
 class BOYADVENTUREUSFX_API AObstaculo : public AActor
 {
-	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	AObstaculo();
+    GENERATED_BODY()
 
 public:
-	FString color;
-	FString textura;
+    // Sets default values for this actor's properties
+    AObstaculo();
 
-	//void Mover();
+public:
+    FString color;
+    FString textura;
 
 private:
-	//int Contrasena;
-	float Peso;
-	float TiempoExistencia;
-	float Resistencia;
-	float Dano;
-	FVector PosicionObstaculo;
-	FVector DimensionesObstaculo;
-	FString NombreObstaculo;
+    float* Peso;
+    float TiempoExistencia;
+    float Resistencia;
+    float Dano;
+    FVector PosicionObstaculo;
+    FVector DimensionesObstaculo;
+    FString NombreObstaculo;
 
 protected:
-	//float DimensionesCocina;
-	FString TipoObstaculo;
+    FString TipoObstaculo;
+    UStaticMeshComponent* MallaObstaculo;
+    bool bEstaActivado;
 
 public:
-	void SetNombreObstaculo(FString _NombreObstaculo) { NombreObstaculo = _NombreObstaculo; }
-	//FString GetNombreObstaculo() const { return NombreObstaculo; }
+    // Getters y Setters
+    void SetNombreObstaculo(FString NewNombreObstaculo) { NombreObstaculo = NewNombreObstaculo; }
+    void SetPosicionObstaculo(FVector NewPosicionObstaculo) { PosicionObstaculo = NewPosicionObstaculo; }
+    FVector GetPosicionObstaculo() const { return PosicionObstaculo; }
+    void SetDimensionesObstaculo(FVector NewDimensionesObstaculo) { DimensionesObstaculo = NewDimensionesObstaculo; }
+    FVector GetDimensionesObstaculo() const { return DimensionesObstaculo; }
+    void SetTipoObstaculo(FString NewTipoObstaculo) { TipoObstaculo = NewTipoObstaculo; }
+    FString GetTipoObstaculo() const { return TipoObstaculo; }
 
-	void SetPosicionObstaculo(FVector _PosicionObstaculo) { PosicionObstaculo = _PosicionObstaculo; }
-	FVector GetPosicionObstaculo() const { return PosicionObstaculo; }
-
-	void SetDimensionesObstaculo(FVector _DimensionesObstaculo) { DimensionesObstaculo = _DimensionesObstaculo; }
-	FVector GetDimensionesObstaculo() const { return DimensionesObstaculo; }
-
-	void SetTipoObstaculo(FString _TipoObstaculo) { TipoObstaculo = _TipoObstaculo; }
-	FString GetTipoObstaculo() const { return TipoObstaculo; }
+    // Método virtual para polimorfismo
+    virtual void Activar();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+    // Called when the game starts or when spawned
+    virtual void BeginPlay() override;
 
-	//class UStaticMeshComponent* MallaObstaculo;
-	UStaticMeshComponent* MallaObstaculo;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
+public:
+    // Called every frame
+    virtual void Tick(float DeltaTime) override;
 };

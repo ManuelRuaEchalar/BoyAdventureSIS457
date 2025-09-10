@@ -10,6 +10,6 @@ AParedMetal::AParedMetal():AObstaculoPared()
 
     if (MaterialParedAsset.Succeeded())
     {
-        MallaObstaculo->SetMaterial(0, MaterialParedAsset.Object); // El índice 0 es el primer slot de material
+        MallaObstaculo->SetMaterial(0, MaterialParedAsset.Object); // El ï¿½ndice 0 es el primer slot de material
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Development\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Source\BoyAdventureUSFX\ObstaculoMovil.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Source\BoyAdventureUSFX\Obstaculo.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\Obstaculo.generated.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\ObstaculoMovil.generated.h

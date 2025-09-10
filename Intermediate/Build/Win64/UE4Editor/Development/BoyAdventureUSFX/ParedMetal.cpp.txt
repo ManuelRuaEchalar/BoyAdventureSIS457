@@ -1,7 +1,7 @@
-D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Development\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
-D:\src_SIS457\BoyAdventureUSFX\Source\BoyAdventureUSFX\ParedMetal.h
-D:\src_SIS457\BoyAdventureUSFX\Source\BoyAdventureUSFX\ObstaculoPared.h
-D:\src_SIS457\BoyAdventureUSFX\Source\BoyAdventureUSFX\Obstaculo.h
-D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\Obstaculo.generated.h
-D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\ObstaculoPared.generated.h
-D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\ParedMetal.generated.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Development\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Source\BoyAdventureUSFX\ParedMetal.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Source\BoyAdventureUSFX\ObstaculoPared.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Source\BoyAdventureUSFX\Obstaculo.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\Obstaculo.generated.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\ObstaculoPared.generated.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\ParedMetal.generated.h

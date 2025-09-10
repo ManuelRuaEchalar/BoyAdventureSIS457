@@ -1,2 +1,2 @@
-D:\src_SIS457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Development\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
-D:\src_SIS457\BoyAdventureUSFX\Source\BoyAdventureUSFX\BoyAdventureUSFX.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Development\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
+C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Source\BoyAdventureUSFX\BoyAdventureUSFX.h

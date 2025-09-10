@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="..\..\BoyAdventureUSFX.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1597FFF6-64BE-41A1-9A86-21B0D57201ED}</UniqueIdentifier>
+      <UniqueIdentifier>{C3D3310A-4985-402C-ADD9-2980F22EB6A4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BoyAdventureUSFX.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\BoyAdventureUSFXEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{80B2CD24-1555-49FE-82D8-5CE3951220B5}</UniqueIdentifier>
+      <UniqueIdentifier>{71CDBF4D-DDC4-4DED-AE6F-2DDED3B547B5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BoyAdventureUSFX">
-      <UniqueIdentifier>{4036C53A-B7B0-4FCF-B688-517FA20173DE}</UniqueIdentifier>
+      <UniqueIdentifier>{63D49F06-BCD3-49E4-A7D6-B6AEF01978EA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\BoyAdventureUSFX\Amigo.cpp">
       <Filter>Source\BoyAdventureUSFX</Filter>
@@ -65,10 +67,46 @@
     <ClInclude Include="..\..\Source\BoyAdventureUSFX\Enemigo.h">
       <Filter>Source\BoyAdventureUSFX</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\EnemigoJefe.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\EnemigoJefe.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\EnemigoPrueba.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\EnemigoPrueba.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\EnemigoTerrestre.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\EnemigoTerrestre.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\EnemigoVolador.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\EnemigoVolador.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\MiEnemigo.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\MiEnemigo.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\BoyAdventureUSFX\Obstaculo.cpp">
       <Filter>Source\BoyAdventureUSFX</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BoyAdventureUSFX\Obstaculo.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\ObstaculoMovil.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\ObstaculoMovil.h">
       <Filter>Source\BoyAdventureUSFX</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\BoyAdventureUSFX\ObstaculoPared.cpp">
@@ -77,10 +115,22 @@
     <ClInclude Include="..\..\Source\BoyAdventureUSFX\ObstaculoPared.h">
       <Filter>Source\BoyAdventureUSFX</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\ObstaculoRotatorio.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\ObstaculoRotatorio.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\BoyAdventureUSFX\ParedMetal.cpp">
       <Filter>Source\BoyAdventureUSFX</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BoyAdventureUSFX\ParedMetal.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\Plataforma.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\Plataforma.h">
       <Filter>Source\BoyAdventureUSFX</Filter>
     </ClInclude>
   </ItemGroup>
