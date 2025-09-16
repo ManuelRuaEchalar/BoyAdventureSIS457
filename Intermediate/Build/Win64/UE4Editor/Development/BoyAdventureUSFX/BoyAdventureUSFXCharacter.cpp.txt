@@ -1,12 +1,12 @@
-C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Development\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
-C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Source\BoyAdventureUSFX\BoyAdventureUSFXCharacter.h
+C:\Users\jruae\Documents\Unreal Projects\BoyAdventureSIS457\Intermediate\Build\Win64\UE4Editor\Development\BoyAdventureUSFX\Definitions.BoyAdventureUSFX.h
+C:\Users\jruae\Documents\Unreal Projects\BoyAdventureSIS457\Source\BoyAdventureUSFX\BoyAdventureUSFXCharacter.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\jruae\Documents\Unreal Projects\sis457\BoyAdventureUSFX\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\BoyAdventureUSFXCharacter.generated.h
+C:\Users\jruae\Documents\Unreal Projects\BoyAdventureSIS457\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\BoyAdventureUSFXCharacter.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayFunctionLibrary.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\HeadMountedDisplayTypes.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IMotionController.h
@@ -40,3 +40,12 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+C:\Users\jruae\Documents\Unreal Projects\BoyAdventureSIS457\Source\BoyAdventureUSFX\Bomba.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystemComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystem.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/ParticlePerfStats.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystem.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Particles/Emitter.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
+C:\Users\jruae\Documents\Unreal Projects\BoyAdventureSIS457\Intermediate\Build\Win64\UE4Editor\Inc\BoyAdventureUSFX\Bomba.generated.h

@@ -8,6 +8,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Bomba.h"
+#include "Engine/World.h"
 
 //////////////////////////////////////////////////////////////////////////
 // ABoyAdventureUSFXCharacter
@@ -43,6 +45,9 @@ ABoyAdventureUSFXCharacter::ABoyAdventureUSFXCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+	// Inicializar la referencia de bomba
+	CurrentBomb = nullptr;
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -56,6 +61,9 @@ void ABoyAdventureUSFXCharacter::SetupPlayerInputComponent(class UInputComponent
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+
+	// Bind de la bomba
+	PlayerInputComponent->BindAction("Bomb", IE_Pressed, this, &ABoyAdventureUSFXCharacter::DropBomb);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ABoyAdventureUSFXCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ABoyAdventureUSFXCharacter::MoveRight);
@@ -76,6 +84,33 @@ void ABoyAdventureUSFXCharacter::SetupPlayerInputComponent(class UInputComponent
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &ABoyAdventureUSFXCharacter::OnResetVR);
 }
 
+void ABoyAdventureUSFXCharacter::DropBomb()
+{
+	// Solo puede soltar bomba si no hay una activa
+	if (CurrentBomb == nullptr)
+	{
+		// Obtener la posición del personaje
+		FVector SpawnLocation = GetActorLocation();
+		FRotator SpawnRotation = GetActorRotation();
+
+		// Spawn de la bomba
+		if (UWorld* World = GetWorld())
+		{
+			CurrentBomb = World->SpawnActor<ABomba>(ABomba::StaticClass(), SpawnLocation, SpawnRotation);
+			if (CurrentBomb)
+			{
+				// Configurar el personaje como owner de la bomba para la callback
+				CurrentBomb->SetOwnerCharacter(this);
+			}
+		}
+	}
+}
+
+void ABoyAdventureUSFXCharacter::OnBombExploded()
+{
+	// Limpiar la referencia cuando la bomba explote
+	CurrentBomb = nullptr;
+}
 
 void ABoyAdventureUSFXCharacter::OnResetVR()
 {
@@ -90,12 +125,12 @@ void ABoyAdventureUSFXCharacter::OnResetVR()
 
 void ABoyAdventureUSFXCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
 {
-		Jump();
+	Jump();
 }
 
 void ABoyAdventureUSFXCharacter::TouchStopped(ETouchIndex::Type FingerIndex, FVector Location)
 {
-		StopJumping();
+	StopJumping();
 }
 
 void ABoyAdventureUSFXCharacter::TurnAtRate(float Rate)
@@ -126,12 +161,12 @@ void ABoyAdventureUSFXCharacter::MoveForward(float Value)
 
 void ABoyAdventureUSFXCharacter::MoveRight(float Value)
 {
-	if ( (Controller != nullptr) && (Value != 0.0f) )
+	if ((Controller != nullptr) && (Value != 0.0f))
 	{
 		// find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
-	
+
 		// get right vector 
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction

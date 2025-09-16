@@ -1,4 +1,3 @@
-// BoyAdventureUSFXGameMode.h (Actualizado)
 #pragma once
 
 #include "CoreMinimal.h"
@@ -23,38 +22,23 @@ class ABoyAdventureUSFXGameMode : public AGameModeBase
 
 public:
     ABoyAdventureUSFXGameMode();
-    void MoverActorAleatoriamente();
 
 protected:
     virtual void BeginPlay() override;
 
 private:
-    // Existentes
-    AObstaculoPared* Obstaculo;
-    AParedMetal* ParedMetal01;
+    // Existentes (solo enemigos)
     AEnemigoVolador* EnemigoVolador;
     AEnemigoTerrestre* EnemigoTerrestre;
     AEnemigoJefe* EnemigoJefe;
     AEnemigoPrueba* EnemigoPrueba;
 
-    // NUEVOS OBSTÁCULOS CON PUNTEROS
-    AObstaculo* ObstaculoBase;
-    AObstaculoMovil* ObstaculoMovil01;
-    AObstaculoRotatorio* ObstaculoRotatorio01;
-
     // Array de punteros para demostrar polimorfismo
     UPROPERTY()
         TArray<AObstaculo*> ListaObstaculos;
 
-    FTimerHandle MovimientoTimer;
-    FTimerHandle ActivacionTimer; // NUEVO: Timer para activar obstáculos
+    FTimerHandle ReplacementTimer;
 
-    UPROPERTY(EditAnywhere, Category = "Movimiento")
-        float Intervalo = 4.0f;
-
-    UPROPERTY(EditAnywhere, Category = "Movimiento")
-        FVector RangoMovimiento = FVector(500.0f, 500.0f, 0.0f);
-
-    // NUEVO: Método para activar todos los obstáculos (polimorfismo)
-    void ActivarObstaculos();
+    // NUEVO: Método para generar obstáculos en patrón
+    void SpawnObstacles();
 };

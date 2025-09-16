@@ -1,4 +1,3 @@
-// BoyAdventureUSFXGameMode.cpp (Actualizado)
 #include "BoyAdventureUSFXGameMode.h"
 #include "BoyAdventureUSFXCharacter.h"
 #include "ObstaculoPared.h"
@@ -32,18 +31,7 @@ void ABoyAdventureUSFXGameMode::BeginPlay()
         ParametrosSpawn.Owner = this;
         ParametrosSpawn.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 
-        // Spawn existentes (mantenidos)
-        FVector Ubicacion(0.0f, 0.0f, 400.0f);
         FRotator Rotacion(0.0f, 0.0f, 0.0f);
-
-        Obstaculo = Mundo->SpawnActor<AObstaculoPared>(AObstaculoPared::StaticClass(), Ubicacion, Rotacion, ParametrosSpawn);
-        if (Obstaculo)
-        {
-            UE_LOG(LogTemp, Warning, TEXT("Obstáculo creado exitosamente"));
-        }
-
-        FVector Ubicacion01(200.0f, -300.0f, 400.0f);
-        ParedMetal01 = Mundo->SpawnActor<AParedMetal>(AParedMetal::StaticClass(), Ubicacion01, Rotacion, ParametrosSpawn);
 
         // Enemigos existentes
         FVector UbicacionVolador(-1000.0f, 0.0f, 400.0f);
@@ -69,93 +57,93 @@ void ABoyAdventureUSFXGameMode::BeginPlay()
             // Cambiar la escala
             EnemigoPrueba->SetActorScale3D(FVector(300.0f, 300.0f, 300.0f));
         }
-        // ========== NUEVOS OBSTÁCULOS CON POLIMORFISMO ==========
 
-        // Obstáculo base (estático) usando PUNTERO
-        FVector UbicacionBase(500.0f, 0.0f, 400.0f);
-        ObstaculoBase = Mundo->SpawnActor<AObstaculo>(AObstaculo::StaticClass(), UbicacionBase, Rotacion, ParametrosSpawn);
-        if (ObstaculoBase)
-        {
-            ListaObstaculos.Add(ObstaculoBase);
-            UE_LOG(LogTemp, Warning, TEXT("ObstaculoBase creado con PUNTERO"));
-        }
+        // Generar obstáculos iniciales
+        SpawnObstacles();
 
-        // Obstáculo móvil usando PUNTERO
-        FVector UbicacionMovil(800.0f, 0.0f, 400.0f);
-        ObstaculoMovil01 = Mundo->SpawnActor<AObstaculoMovil>(AObstaculoMovil::StaticClass(), UbicacionMovil, Rotacion, ParametrosSpawn);
-        if (ObstaculoMovil01)
-        {
-            ListaObstaculos.Add(ObstaculoMovil01);
-            UE_LOG(LogTemp, Warning, TEXT("ObstaculoMovil creado con PUNTERO"));
-        }
-
-        // Obstáculo rotatorio usando PUNTERO
-        FVector UbicacionRotatorio(1100.0f, 0.0f, 400.0f);
-        ObstaculoRotatorio01 = Mundo->SpawnActor<AObstaculoRotatorio>(AObstaculoRotatorio::StaticClass(), UbicacionRotatorio, Rotacion, ParametrosSpawn);
-        if (ObstaculoRotatorio01)
-        {
-            ListaObstaculos.Add(ObstaculoRotatorio01);
-            UE_LOG(LogTemp, Warning, TEXT("ObstaculoRotatorio creado con PUNTERO"));
-        }
-
-        // Configurar timers
+        // Configurar timer para reemplazar obstáculos cada 5 segundos
         GetWorld()->GetTimerManager().SetTimer(
-            MovimientoTimer,
+            ReplacementTimer,
             this,
-            &ABoyAdventureUSFXGameMode::MoverActorAleatoriamente,
-            Intervalo,
-            true
-        );
-
-        // NUEVO: Timer para activar obstáculos cada 2 segundos (demuestra polimorfismo)
-        GetWorld()->GetTimerManager().SetTimer(
-            ActivacionTimer,
-            this,
-            &ABoyAdventureUSFXGameMode::ActivarObstaculos,
-            2.0f,
+            &ABoyAdventureUSFXGameMode::SpawnObstacles,
+            5.0f,
             true
         );
     }
 }
 
-void ABoyAdventureUSFXGameMode::MoverActorAleatoriamente()
+void ABoyAdventureUSFXGameMode::SpawnObstacles()
 {
-    // Mover obstáculos existentes
-    if (Obstaculo)
+    UE_LOG(LogTemp, Warning, TEXT("========== REEMPLAZANDO OBSTÁCULOS =========="));
+
+    // Destruir obstáculos actuales
+    for (AObstaculo* Obs : ListaObstaculos)
     {
-        FVector PosicionActual = Obstaculo->GetActorLocation();
-        float NuevoX = FMath::RandRange(-RangoMovimiento.X, RangoMovimiento.X);
-        float NuevoY = FMath::RandRange(-RangoMovimiento.Y, RangoMovimiento.Y);
-        FVector NuevaPosicion = FVector(NuevoX, NuevoY, PosicionActual.Z);
-        Obstaculo->SetActorLocation(NuevaPosicion);
-    }
-}
-
-// NUEVO MÉTODO: Demuestra polimorfismo
-void ABoyAdventureUSFXGameMode::ActivarObstaculos()
-{
-    UE_LOG(LogTemp, Warning, TEXT("========== ACTIVANDO OBSTÁCULOS (POLIMORFISMO) =========="));
-
-    // Recorrer el array de punteros base y llamar al método virtual Activar()
-    // Cada clase ejecutará su propia implementación
-    for (int32 i = 0; i < ListaObstaculos.Num(); i++)
-    {
-        FString tipoObs = ListaObstaculos[i]->GetClass()->GetName();
-            AObstaculo* Obs = ListaObstaculos[i];
-            if (Obs)
-            {
-                // POLIMORFISMO EN ACCIÓN: El mismo puntero base llama diferentes implementaciones
-                Obs->Activar();
-
-                FString TipoObstaculo = Obs->GetClass()->GetName();
-                GEngine->AddOnScreenDebugMessage(
-                    i,                     // Key único para cada obstáculo
-                    10.0f,                 // Duración más larga
-                    FColor::Green,         // Color
-                    FString::Printf(TEXT("Activado: %s"), *TipoObstaculo)
-                );
-            }
+        if (Obs)
+        {
+            Obs->Destroy();
         }
-        
-        
+    }
+    ListaObstaculos.Empty();
+
+    UWorld* Mundo = GetWorld();
+    if (!Mundo) return;
+
+    FActorSpawnParameters ParametrosSpawn;
+    ParametrosSpawn.Owner = this;
+    ParametrosSpawn.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+
+    FRotator Rotacion(0.0f, 0.0f, 0.0f);
+
+    // Centro de la pista
+    const FVector Center(-470.0f, -100.0f, 100.0f);
+
+    // Posiciones Y: izquierda y derecha
+    const float LeftY = Center.Y - 700.0f;
+    const float RightY = Center.Y + 700.0f;
+
+    // Clases de obstáculos disponibles (todas derivadas de AObstaculo)
+    TArray<UClass*> ObstacleClasses;
+    ObstacleClasses.Add(AObstaculo::StaticClass());
+    ObstacleClasses.Add(AObstaculoMovil::StaticClass());
+    ObstacleClasses.Add(AObstaculoRotatorio::StaticClass());
+    ObstacleClasses.Add(AObstaculoPared::StaticClass());
+    ObstacleClasses.Add(AParedMetal::StaticClass());
+
+    // Patrón: 5 obstáculos a lo largo de X, alternando izquierda/derecha, tipos aleatorios
+    const int NumObstacles = 5;
+    float StartX = Center.X - 1000.0f;
+    const float Spacing = 400.0f;
+
+    for (int32 i = 0; i < NumObstacles; i++)
+    {
+        // Alternar lado
+        float Y = (i % 2 == 0) ? LeftY : RightY;
+
+        FVector Ubicacion(StartX + (i * Spacing), Y, Center.Z);
+
+        // Seleccionar tipo aleatorio (para que sean distintos cada vez)
+        UClass* SelectedClass = ObstacleClasses[FMath::RandHelper(ObstacleClasses.Num())];
+
+        // Spawn polimórfico
+        AObstaculo* NewObs = Mundo->SpawnActor<AObstaculo>(SelectedClass, Ubicacion, Rotacion, ParametrosSpawn);
+        if (NewObs)
+        {
+            ListaObstaculos.Add(NewObs);
+
+            // Activar (polimorfismo)
+            NewObs->Activar();
+
+            // Mensaje en pantalla
+            FString TipoObstaculo = NewObs->GetClass()->GetName();
+            GEngine->AddOnScreenDebugMessage(
+                i,                     // Key único
+                10.0f,                 // Duración
+                FColor::Green,         // Color
+                FString::Printf(TEXT("Activado: %s en posición (%f, %f, %f)"), *TipoObstaculo, Ubicacion.X, Ubicacion.Y, Ubicacion.Z)
+            );
+
+            UE_LOG(LogTemp, Warning, TEXT("Obstáculo %s creado en (%f, %f, %f)"), *TipoObstaculo, Ubicacion.X, Ubicacion.Y, Ubicacion.Z);
+        }
+    }
 }

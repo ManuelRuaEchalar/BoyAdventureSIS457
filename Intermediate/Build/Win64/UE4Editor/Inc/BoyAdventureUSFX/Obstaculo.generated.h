@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BOYADVENTUREUSFX_Obstaculo_generated_h
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_SPARSE_DATA
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_RPC_WRAPPERS
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_INCLASS_NO_PURE_DECLS \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_SPARSE_DATA
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_RPC_WRAPPERS
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAObstaculo(); \
 	friend struct Z_Construct_UClass_AObstaculo_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AObstaculo)
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_INCLASS \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesAObstaculo(); \
 	friend struct Z_Construct_UClass_AObstaculo_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AObstaculo)
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_STANDARD_CONSTRUCTORS \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AObstaculo(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AObstaculo) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_ENHANCED_CONSTRUCTORS \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AObstaculo(AObstaculo&&); \
@@ -58,28 +58,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AObstaculo)
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_PRIVATE_PROPERTY_OFFSET
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_10_PROLOG
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_GENERATED_BODY_LEGACY \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_PRIVATE_PROPERTY_OFFSET
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_10_PROLOG
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_PRIVATE_PROPERTY_OFFSET \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_SPARSE_DATA \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_RPC_WRAPPERS \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_INCLASS \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_STANDARD_CONSTRUCTORS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_PRIVATE_PROPERTY_OFFSET \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_SPARSE_DATA \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_RPC_WRAPPERS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_INCLASS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_GENERATED_BODY \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_PRIVATE_PROPERTY_OFFSET \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_SPARSE_DATA \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_INCLASS_NO_PURE_DECLS \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h_13_ENHANCED_CONSTRUCTORS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_PRIVATE_PROPERTY_OFFSET \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_SPARSE_DATA \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_INCLASS_NO_PURE_DECLS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -87,7 +87,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> BOYADVENTUREUSFX_API UClass* StaticClass<class AObstaculo>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID BoyAdventureUSFX_Source_BoyAdventureUSFX_Obstaculo_h
+#define CURRENT_FILE_ID BoyAdventureSIS457_Source_BoyAdventureUSFX_Obstaculo_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

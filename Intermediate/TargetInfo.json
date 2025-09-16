@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "BoyAdventureUSFX",
-			"Path": "C:\\Users\\jruae\\Documents\\Unreal Projects\\sis457\\BoyAdventureUSFX\\Source\\BoyAdventureUSFX.Target.cs",
+			"Path": "C:\\Users\\jruae\\Documents\\Unreal Projects\\BoyAdventureSIS457\\Source\\BoyAdventureUSFX.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "BoyAdventureUSFXEditor",
-			"Path": "C:\\Users\\jruae\\Documents\\Unreal Projects\\sis457\\BoyAdventureUSFX\\Source\\BoyAdventureUSFXEditor.Target.cs",
+			"Path": "C:\\Users\\jruae\\Documents\\Unreal Projects\\BoyAdventureSIS457\\Source\\BoyAdventureUSFXEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

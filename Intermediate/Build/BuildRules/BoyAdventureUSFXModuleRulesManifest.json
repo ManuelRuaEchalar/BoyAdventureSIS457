@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\jruae\\Documents\\Unreal Projects\\sis457\\BoyAdventureUSFX\\Source\\BoyAdventureUSFX\\BoyAdventureUSFX.Build.cs",
-		"C:\\Users\\jruae\\Documents\\Unreal Projects\\sis457\\BoyAdventureUSFX\\Source\\BoyAdventureUSFX.Target.cs",
-		"C:\\Users\\jruae\\Documents\\Unreal Projects\\sis457\\BoyAdventureUSFX\\Source\\BoyAdventureUSFXEditor.Target.cs"
+		"C:\\Users\\jruae\\Documents\\Unreal Projects\\BoyAdventureSIS457\\Source\\BoyAdventureUSFX\\BoyAdventureUSFX.Build.cs",
+		"C:\\Users\\jruae\\Documents\\Unreal Projects\\BoyAdventureSIS457\\Source\\BoyAdventureUSFX.Target.cs",
+		"C:\\Users\\jruae\\Documents\\Unreal Projects\\BoyAdventureSIS457\\Source\\BoyAdventureUSFXEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\BoyAdventureUSFX.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C3D3310A-4985-402C-ADD9-2980F22EB6A4}</UniqueIdentifier>
+      <UniqueIdentifier>{E0195A8F-141D-4312-9B27-AE7A8CB9AE9F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BoyAdventureUSFX.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{71CDBF4D-DDC4-4DED-AE6F-2DDED3B547B5}</UniqueIdentifier>
+      <UniqueIdentifier>{28B54DE1-072E-40B0-9B1F-B48C1FD33177}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,12 +32,18 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BoyAdventureUSFX">
-      <UniqueIdentifier>{63D49F06-BCD3-49E4-A7D6-B6AEF01978EA}</UniqueIdentifier>
+      <UniqueIdentifier>{32AB64C1-CD96-4496-8985-9A82CC7F7DAD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\BoyAdventureUSFX\Amigo.cpp">
       <Filter>Source\BoyAdventureUSFX</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BoyAdventureUSFX\Amigo.h">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BoyAdventureUSFX\Bomba.cpp">
+      <Filter>Source\BoyAdventureUSFX</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BoyAdventureUSFX\Bomba.h">
       <Filter>Source\BoyAdventureUSFX</Filter>
     </ClInclude>
     <None Include="..\..\Source\BoyAdventureUSFX\BoyAdventureUSFX.Build.cs">

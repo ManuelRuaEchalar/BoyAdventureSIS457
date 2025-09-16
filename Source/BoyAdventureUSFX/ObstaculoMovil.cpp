@@ -1,4 +1,3 @@
-// ObstaculoMovil.cpp
 #include "ObstaculoMovil.h"
 #include "Components/StaticMeshComponent.h"
 #include "Materials/MaterialInterface.h"
@@ -11,6 +10,16 @@ AObstaculoMovil::AObstaculoMovil()
     // Configurar velocidad inicial
     VelocidadMovimiento = 200.0f;
     DireccionMovimiento = FVector(0.0f, 1.0f, 0.0f); // Movimiento en Y
+
+    // Usar la malla de tubo especificada
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshPipe(
+        TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Pipe.Shape_Pipe'")
+    );
+
+    if (MeshPipe.Succeeded() && MallaObstaculo)
+    {
+        MallaObstaculo->SetStaticMesh(MeshPipe.Object);
+    }
 
     // Aplicar material de madera
     static ConstructorHelpers::FObjectFinder<UMaterialInterface> MaterialWood(

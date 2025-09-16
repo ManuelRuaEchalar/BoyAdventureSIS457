@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BOYADVENTUREUSFX_Enemigo_generated_h
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_SPARSE_DATA
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_RPC_WRAPPERS
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_INCLASS_NO_PURE_DECLS \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_SPARSE_DATA
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_RPC_WRAPPERS
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEnemigo(); \
 	friend struct Z_Construct_UClass_AEnemigo_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemigo)
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_INCLASS \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAEnemigo(); \
 	friend struct Z_Construct_UClass_AEnemigo_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AEnemigo)
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_STANDARD_CONSTRUCTORS \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEnemigo(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEnemigo) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_ENHANCED_CONSTRUCTORS \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AEnemigo(AEnemigo&&); \
@@ -58,31 +58,31 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEnemigo)
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_PRIVATE_PROPERTY_OFFSET \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__MallaEnemigo() { return STRUCT_OFFSET(AEnemigo, MallaEnemigo); }
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_11_PROLOG
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_GENERATED_BODY_LEGACY \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_11_PROLOG
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_PRIVATE_PROPERTY_OFFSET \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_SPARSE_DATA \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_RPC_WRAPPERS \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_INCLASS \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_STANDARD_CONSTRUCTORS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_PRIVATE_PROPERTY_OFFSET \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_SPARSE_DATA \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_RPC_WRAPPERS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_INCLASS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_GENERATED_BODY \
+#define BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_PRIVATE_PROPERTY_OFFSET \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_SPARSE_DATA \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_INCLASS_NO_PURE_DECLS \
-	BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h_14_ENHANCED_CONSTRUCTORS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_PRIVATE_PROPERTY_OFFSET \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_SPARSE_DATA \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_INCLASS_NO_PURE_DECLS \
+	BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -90,7 +90,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> BOYADVENTUREUSFX_API UClass* StaticClass<class AEnemigo>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID BoyAdventureUSFX_Source_BoyAdventureUSFX_Enemigo_h
+#define CURRENT_FILE_ID BoyAdventureSIS457_Source_BoyAdventureUSFX_Enemigo_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

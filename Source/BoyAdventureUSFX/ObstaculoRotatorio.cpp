@@ -1,4 +1,3 @@
-// ObstaculoRotatorio.cpp
 #include "ObstaculoRotatorio.h"
 #include "Components/StaticMeshComponent.h"
 #include "Materials/MaterialInterface.h"
@@ -12,6 +11,16 @@ AObstaculoRotatorio::AObstaculoRotatorio()
     VelocidadRotacion = 90.0f; // grados por segundo
     RadioMovimiento = 300.0f;
     AnguloActual = 0.0f;
+
+    // Usar la malla de pared especificada
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MeshWall(
+        TEXT("StaticMesh'/Game/StarterContent/Architecture/Wall_400x200.Wall_400x200'")
+    );
+
+    if (MeshWall.Succeeded() && MallaObstaculo)
+    {
+        MallaObstaculo->SetStaticMesh(MeshWall.Object);
+    }
 
     // Aplicar material de ladrillo para diferenciarlo
     static ConstructorHelpers::FObjectFinder<UMaterialInterface> MaterialBrick(
