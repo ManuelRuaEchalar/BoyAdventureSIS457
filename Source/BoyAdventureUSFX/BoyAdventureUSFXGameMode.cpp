@@ -140,7 +140,7 @@ void ABoyAdventureUSFXGameMode::SpawnObstacles()
                 i,                     // Key único
                 10.0f,                 // Duración
                 FColor::Green,         // Color
-                FString::Printf(TEXT("Activado: %s en posición (%f, %f, %f)"), *TipoObstaculo, Ubicacion.X, Ubicacion.Y, Ubicacion.Z)
+                FString::Printf(TEXT("Activado MI RAMA: %s en posición (%f, %f, %f)"), *TipoObstaculo, Ubicacion.X, Ubicacion.Y, Ubicacion.Z)
             );
 
             UE_LOG(LogTemp, Warning, TEXT("Obstáculo %s creado en (%f, %f, %f)"), *TipoObstaculo, Ubicacion.X, Ubicacion.Y, Ubicacion.Z);
